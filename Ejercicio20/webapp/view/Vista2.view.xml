@@ -1,0 +1,25 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="Ejercicio20.Ejercicio20.controller.Vista2"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m"
+xmlns:core="sap.ui.core"
+
+displayBlock="true">
+
+    <Page id="page" title="{i18n>titleTable}" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <form:SimpleForm >
+
+                <Label text="{i18n>OrderID}"/>
+                <Text text="{OrderItemsModel>/OrderID}"/>
+
+                <Label text="{i18n>CustomID}"/>
+                <Text text="{OrderItemsModel>/CustomerID}"/>
+
+                <Label text="{i18n>ShipCountry}"/>
+                <Text text="{OrderItemsModel>/ShipCountry}"/>
+
+            </form:SimpleForm>
+            
+        </content>
+    </Page>
+</mvc:View>
